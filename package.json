@@ -1,0 +1,452 @@
+{
+    "author": "José Gonzalez",
+    "description": "Module for Rocketbot Telescope",
+    "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+    "version": "0.2",
+    "license": "MIT",
+    "homepage": "https://rocketbot.co",
+    "linux": true,
+    "windows": true,
+    "mac": true,
+    "docker": true,
+    "name": "Telescope",
+    "dependencies": {},
+    "title": {
+      "en": "Rocketbot Telescope",
+      "es": "Rocketbot Telescope",
+      "pr": "Rocketbot Telescope"
+    },
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+    "children": [
+      {
+        "en": {
+          "title": "Login Telescope",
+          "description": "Command to login to Telescope",
+          "title_options": "Select Option",
+          "options": null
+        },
+        "es": {
+          "title": "Login Telescope",
+          "description": "Comando para conectarse a Telescope",
+          "title_options": "Seleccione una opción",
+          "options": null
+        },
+        "pr": {
+          "title": "Login Telescope",
+          "description": "Comando para conectar ao telescópio",
+          "title_options": "Selecione uma opção",
+          "options": null
+        },
+        "form": {
+          "css": "modal-lg",
+          "inputs": [
+            {
+              "type": "file_select",
+              "placeholder": {
+                "es": "C:/Users/User/Desktop/archivo.ini",
+                "en": "C:/Users/User/Desktop/file.ini",
+                "pr": "C:/Users/User/Desktop/arquivo.ini"
+              },
+              "title": {
+                "es": "Ruta Archivo .ini:",
+                "en": "Path to .ini file:",
+                "pr": "Caminho para o arquivo .ini:"
+              },
+              "description": {
+                "es": "Selecciona el archivo .ini para conectarse",
+                "en": "Select the .ini file to connect",
+                "pr": "Selecione o arquivo .ini para conectar"
+              },
+              "id": "ruta_",
+              "css": "col-md-12"
+            }
+          ]
+        },
+        "video_youtube": "aMV6cXPMMSo",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+        "module": "Login",
+        "module_name": "Telescope",
+        "visible": true,
+        "options": false,
+        "father": "module",
+        "group": "scripts",
+        "linux": true,
+        "windows": true,
+        "mac": true,
+        "docker": true
+      },
+      {
+        "en": {
+          "title": "Upload document",
+          "description": "Upload document to get text",
+          "title_options": "Select Option",
+          "options": null
+        },
+        "es": {
+          "title": "Subir documento",
+          "description": "Subir documento para obtener texto",
+          "title_options": "Seleccione una opción",
+          "options": null
+        },
+        "pr": {
+          "title": "Carregar documento",
+          "description": "Carregar documento para obter texto",
+          "title_options": "Selecione uma opção",
+          "options": null
+        },
+        "form": {
+          "css": "modal-lg",
+          "inputs": [
+            {
+              "type": "file_select",
+              "placeholder": {
+                "es": "C:/Users/User/Desktop/documento.jpg",
+                "en": "C:/Users/User/Desktop/document.jpg",
+                "pr": "C:/Users/User/Desktop/documento.jpg"
+              },
+              "title": {
+                "es": "Seleccionar archivo",
+                "en": "Select File",
+                "pr": "Selecione o arquivo"
+              },
+              "description": {
+                "es": "Selecciona el documento a subir para obtener el texto",
+                "en": "Select the document to upload to get the text",
+                "pr": "Selecione o documento para carregar para obter o texto"
+              },
+              "id": "document",
+              "css": "col-md-12"
+            },
+            {
+              "type": "input",
+              "help": {
+                "en": "Template ID from Telescope",
+                "es": "ID de Template en Telescope",
+                "pr": "ID de Template no Telescope"
+              },
+              "title": {
+                "es": "Template token",
+                "en": "Template token",
+                "pr": "Token de Template"
+              },
+              "description": {
+                "es": "Token de Template en Telescope",
+                "en": "Template token in Telescope",
+                "pr": "Token de Template no Telescope"
+              },
+              "placeholder": {
+                "es": "RCKU2GKCUP4XB5VW",
+                "en": "RCKU2GKCUP4XB5VW",
+                "pr": "RCKU2GKCUP4XB5VW"
+              },
+              "id": "template_token",
+              "css": "col-md-6"
+            },
+            {
+                "type": "input",
+                "placeholder": {
+                  "es": "var",
+                  "en": "var",
+                  "pr": "var"
+                },
+                "help": {
+                  "en": "Variable to store result without {}",
+                  "es": "Variable donde guardar resultado sin {}",
+                  "pr": "Variável para armazenar o resultado sem {}"
+                },
+                "description": {
+                  "es": "Variable donde se guardará el texto obtenido",
+                  "en": "Variable where the text obtained will be stored",
+                  "pr": "Variável onde o texto obtido será armazenado"
+                },
+                "title": {
+                  "es": "Asignar a variable",
+                  "en": "Set to var",
+                  "pr": "Atribuir a variável"
+                },
+                "id": "result",
+                "css": "col-md-6"
+              }
+          ]
+        },
+        "video_youtube": "aMV6cXPMMSo",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+        "module": "UploadDocument",
+        "module_name": "Telescope",
+        "visible": true,
+        "options": false,
+        "father": "module",
+        "group": "scripts",
+        "linux": true,
+        "windows": true,
+        "mac": true,
+        "docker": true
+      },
+      {
+        "en": {
+          "title": "Upload documents",
+          "description": "Upload multiple documents to get text",
+          "title_options": "Select Option",
+          "options": null
+        },
+        "es": {
+          "title": "Subir documentos",
+          "description": "Subir multiples documentos para obtener texto",
+          "title_options": "Seleccione una opción",
+          "options": null
+        },
+        "pr": {
+          "title": "Carregar documentos",
+          "description": "Carregue vários documentos para obter texto",
+          "title_options": "Selecione uma opção",
+          "options": null
+        },
+        "form": {
+          "css": "modal-lg",
+          "inputs": [
+            {
+              "type": "folder_select",
+              "placeholder": {
+                "es": "C:/Users/User/Desktop/carpeta",
+                "en": "C:/Users/User/Desktop/folder",
+                "pr": "C:/Users/User/Desktop/pasta"
+              },
+              "title": {
+                "es": "Seleccionar carpeta",
+                "en": "Select Folder",
+                "pr": "Selecione a pasta"
+              },
+              "description": {
+                "es": "Selecciona la carpeta donde se encuentran los documentos a subir",
+                "en": "Select the folder where the documents to upload are located",
+                "pr": "Selecione a pasta onde estão localizados os documentos a serem carregados"
+              },
+              "id": "folder",
+              "css": "col-md-12"
+            },
+            {
+              "type": "input",
+              "help": {
+                "en": "Template ID from Telescope",
+                "es": "ID de Template en Telescope",
+                "pr": "ID de Template no Telescope"
+              },
+              "title": {
+                "es": "Template ID",
+                "en": "Template ID",
+                "pr": "Template ID"
+              },
+              "description": {
+                "es": "ID de Template en Telescope",
+                "en": "Template ID in Telescope",
+                "pr": "ID de Template no Telescope"
+              },
+              "placeholder": {
+                "es": "RCKU2GKCUP4XB5VW",
+                "en": "RCKU2GKCUP4XB5VW",
+                "pr": "RCKU2GKCUP4XB5VW"
+              },
+              "id": "template_token",
+              "css": "col-md-6"
+            },
+            {
+                "type": "input",
+                "placeholder": {
+                  "es": "var",
+                  "en": "var",
+                  "pr": "var"
+                },
+                "help": {
+                  "en": "Variable to store result without {}",
+                  "es": "Variable donde guardar resultado sin {}",
+                  "pr": "Variável para armazenar o resultado sem {}"
+                },
+                "title": {
+                  "es": "Asignar a variable",
+                  "en": "Set to var"
+                },
+                "description": {
+                  "es": "Variable donde se guardará el contenido de los documentos",
+                  "en": "Variable where the content of the documents will be stored",
+                  "pr": "Variável onde o conteúdo dos documentos será armazenado"
+                },
+                "id": "result",
+                "css": "col-md-6"
+              }
+          ]
+        },
+        "video_youtube": "aMV6cXPMMSo",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+        "module": "UploadFolder",
+        "module_name": "Telescope",
+        "visible": true,
+        "options": false,
+        "father": "module",
+        "group": "scripts",
+        "linux": true,
+        "windows": true,
+        "mac": true,
+        "docker": true
+      },
+      {
+        "en": {
+          "title": "Check result status",
+          "description": "Returns the status of a result",
+          "title_options": "Select Option",
+          "options": null
+        },
+        "es": {
+          "title": "Consultar estado de resultado",
+          "description": "Devuelve el estado de un resultado",
+          "title_options": "Seleccione una opción",
+          "options": null
+        },
+        "pr": {
+          "title": "Consultar estado do resultado",
+          "description": "Retorna o status de um resultado",
+          "title_options": "Selecione uma opção",
+          "options": null
+        },
+        "form": {
+          "css": "modal-lg",
+          "inputs": [
+            {
+              "type": "input",
+              "placeholder": {
+                "es": "4YLXHLLD4IXM621P",
+                "en": "4YLXHLLD4IXM621P",
+                "pr": "4YLXHLLD4IXM621P"
+              },
+              "title": {
+                "es": "Token de resultado",
+                "en": "Result Token",
+                "pr": "Token de resultado"
+              },
+              "description": {
+                "es": "Token de resultado de un proceso de extracción de texto",
+                "en": "Result token of a text extraction process",
+                "pr": "Token de resultado de um processo de extração de texto"
+              },
+              "id": "token_",
+              "css": "col-md-6"
+            },
+            {
+              "type": "input",
+              "placeholder": {
+                "es": "var",
+                "en": "var",
+                "pr": "var"
+              },
+              "help": {
+                "en": "Variable to store result without {}",
+                "es": "Variable donde guardar resultado sin {}",
+                "pr": "Variável para armazenar o resultado sem {}"
+              },
+              "title": {
+                "es": "Asignar a variable",
+                "en": "Set to var",
+                "pr": "Atribuir a variável"
+              },
+              "description": {
+                "es": "Variable donde se guardará el resultado de la consulta",
+                "en": "Variable where the result of the check will be stored",
+                "pr": "Variável onde o resultado da consulta será armazenado"
+              },
+              "id": "result",
+              "css": "col-md-6"
+            }
+          ]
+        },
+        "video_youtube": "aMV6cXPMMSo",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+        "module": "CheckResultStatus",
+        "module_name": "Telescope",
+        "visible": true,
+        "options": false,
+        "father": "module",
+        "group": "scripts",
+        "linux": true,
+        "windows": true,
+        "mac": true,
+        "docker": true
+      },
+      {
+        "en": {
+          "title": "Get result",
+          "description": "Get data from a result",
+          "title_options": "Select Option",
+          "options": null
+        },
+        "es": {
+          "title": "Obtener resultado",
+          "description": "Obtener información de un resultado",
+          "title_options": "Seleccione una opción",
+          "options": null
+        },
+        "pr": {
+          "title": "Obter resultado",
+          "description": "Obter informação de um resultado",
+          "title_options": "Selecione uma opção",
+          "options": null
+        },
+        "form": {
+          "css": "modal-lg",
+          "inputs": [
+            {
+              "type": "input",
+              "placeholder": {
+                "es": "RCKU2GKCUP4XB5VW",
+                "en": "RCKU2GKCUP4XB5VW",
+                "pr": "RCKU2GKCUP4XB5VW"
+              },
+              "title": {
+                "es": "Token de resultado",
+                "en": "Result token",
+                "pr": "Token de resultado"
+              },
+              "description": {
+                "es": "Token de resultado de un proceso de extracción de texto",
+                "en": "Result token of a text extraction process",
+                "pr": "Token de resultado de um processo de extração de texto"
+              },
+              "id": "token_",
+              "css": "col-md-6"
+            },
+            {
+              "type": "input",
+              "title": {
+                "es": "Guardar resultado en variable",
+                "en": "Set result to var",
+                "pr": "Atribuir resultado a variável"
+              },
+              "description": {
+                "es": "Variable donde se guardará el resultado",
+                "en": "Variable where the result will be stored",
+                "pr": "Variável onde o resultado será armazenado"
+              },
+              "help": {
+                "en": "Variable to store result without {}",
+                "es": "Variable donde guardar resultado sin {}",
+                "pr": "Variável para armazenar o resultado sem {}"
+              },
+              "id": "result_",
+              "css": "col-md-6"
+            }
+          ]
+        },
+        "video_youtube": "aMV6cXPMMSo",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEVMaXG8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe8ABe3rWabAAAAEHRSTlMAEOCAwKBAMPBg0CCQsFBw0V8YOgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAVxJREFUSMeVlQkSgyAMRZV9Ve5/2qJC2RIYmOlMG3x+kh/S4zjCdDGuz6NdYbm82ASijt0EghKbQAh6F1ByCSguafWTnAuAxgdkHXBTwNhx004A8G0OB/4lYXWUoEApIWniEgE0ZhKFAYe2gQcBE2Oa0rckomspEIgH5dnZu7NyABR9Hvvs4vGb717WA/xzn2b9M8yBO2Uqc4Z6Dvh/bXzKgYVpDtWt0vypkhguXgMYwVWyBuqL4lATElPgGoFGQYMpdMYxWQAZoFbqnRZoJ6kTij6d+nyuuGuhDIBLZQO57kf/arY4pPsG79y0vG/iATDvKU1qgyZnU0ay9W0wn1yQsS3T4s1sc7koVX2uduCfqrri3b3vz1NJaNitLuPianbYLWb3sAgIEPR5sfx7gNLZkSBhUwI7Ei7BdiWkQ07F8MpqBRICJ6TalEBSn0gMU3gpEeeeZFsSoOtR4gcEPljodqP8KAAAAABJRU5ErkJggg==",
+        "module": "GetResult",
+        "module_name": "Telescope",
+        "visible": true,
+        "options": false,
+        "father": "module",
+        "group": "scripts",
+        "linux": true,
+        "windows": true,
+        "mac": true,
+        "docker": true
+      }
+    ]
+  }
+  
