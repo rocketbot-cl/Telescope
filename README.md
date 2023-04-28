@@ -2,30 +2,17 @@
   
 Module for Rocketbot Telescope  
 
+*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
+
 ## How to install this module
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+To install the module in Rocketbot Studio, it can be done in two ways:
+1. Manual: __Download__ the .zip file and unzip it in the modules folder. The folder name must be the same as the module and inside it must have the following files and folders: \__init__.py, package.json, docs, example and libs. If you have the application open, refresh your browser to be able to use the new module.
+2. Automatic: When entering Rocketbot Studio on the right margin you will find the **Addons** section, select **Install Mods**, search for the desired module and press install.  
 
-
-## How to use this module
-
-To use this module you must:
-
-1. Create project
-2. Generate the template
-   1. Take a reference point.
-   2. Select the data you want to extract.
-   3. Save the Template.
-   4. Upload and process a file.
-   5. Check the extracted data.
-3. Save the generated token for the template
-4. Create a file called telescope.ini containing:
-   [USER]
-   user = aaaa@rocketbot.cl
-   password = robot1111
-   server = http://11.11.1.111/api
 
 ## Overview
+
 
 1. Login Telescope  
 Command to login to Telescope
