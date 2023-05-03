@@ -17,7 +17,13 @@ if module == 'Login':
     email_ = config.get('USER', 'user')
     pass_ = config.get('USER', 'password')
     server_ = config.get('USER', 'server')
-
+    
+    if not server_.endswith('/'):
+        server_ += '/'
+        
+    if server_.endswith('api/'):
+        server_ = server_.replace('api/', '')
+    
     try:
         data = {'email': email_, 'password': pass_}
         res = requests.post(server_ + '/api/auth/login', data,
