@@ -17,7 +17,13 @@ if module == 'Login':
     email_ = config.get('USER', 'user')
     pass_ = config.get('USER', 'password')
     server_ = config.get('USER', 'server')
-
+    
+    if not server_.endswith('/'):
+        server_ += '/'
+        
+    if server_.endswith('api/'):
+        server_ = server_.replace('api/', '')
+    
     try:
         data = {'email': email_, 'password': pass_}
         res = requests.post(server_ + '/api/auth/login', data,
@@ -49,7 +55,7 @@ if module == 'UploadDocument':
     try:
         data = {'template_token': template_id}
         tmp = open(document, 'rb')
-        res = requests.post(server_ + '/process/async', data=data,
+        res = requests.post(server_ + 'api/process/async', data=data,
                             files={'file': tmp}, headers={'Authorization': 'Bearer ' + token})
 
         if res.status_code == 200:
@@ -87,7 +93,7 @@ if module == 'UploadFolder':
         for f in os.listdir(os.path.normpath(folder)):
             if os.path.basename(f).endswith('jpg') or os.path.basename(f).endswith('jpeg') or os.path.basename(f).endswith('png') or os.path.basename(f).endswith('pdf'):
                 files[os.path.splitext(f)[0]] = open(os.path.join(folder, f), 'rb')
-        res = requests.post(server_ + '/process/batch', files=files, data=data, headers={'Authorization': 'Bearer ' + token})
+        res = requests.post(server_ + 'api/process/batch', files=files, data=data, headers={'Authorization': 'Bearer ' + token})
         if res.status_code == 200:
             if result:
                 SetVar(result, res.json()['data'])
@@ -105,7 +111,7 @@ if module == 'CheckResultStatus':
         raise Exception('Missing token')
 
     try:
-        res = requests.post(server_ + '/result/check/' + token_, headers={'Authorization': 'Bearer ' + token})
+        res = requests.post(server_ + 'api/result/check/' + token_, headers={'Authorization': 'Bearer ' + token})
         if res.status_code == 200:
             if result:
                 SetVar(result, res.json()['data'])
@@ -123,7 +129,7 @@ if module == 'GetResult':
         raise Exception('Missing token')
 
     try:
-        res = requests.post(server_ + '/result/get/' + token_, headers={'Authorization': 'Bearer ' + token})
+        res = requests.post(server_ + 'api/result/get/' + token_, headers={'Authorization': 'Bearer ' + token})
         if res.status_code == 200:
             tmp = res.json()['data']
             tmp = json.loads(tmp['result'])

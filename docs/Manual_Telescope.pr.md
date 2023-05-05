@@ -1,16 +1,17 @@
-
-
-
-
 # Rocketbot Telescope
   
-Module for Rocketbot Telescope  
-  
-![banner](/imgs/Banner_Telescope.png)
+Módulo para Rocketbot Telescope  
 
+*Read this in other languages: [English](Manual_Telescope.md), [Português](Manual_Telescope.pr.md), [Español](Manual_Telescope.es.md)*
+  
+![banner](imgs/Banner_Telescope.jpg)
 ## Como instalar este módulo
   
-__Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
+Para instalar o módulo no Rocketbot Studio, pode ser feito de duas formas:
+1. Manual: __Baixe__ o arquivo .zip e descompacte-o na pasta módulos. O nome da pasta deve ser o mesmo do módulo e dentro dela devem ter os seguintes arquivos e pastas: \__init__.py, package.json, docs, example e libs. Se você tiver o aplicativo aberto, atualize seu navegador para poder usar o novo módulo.
+2. Automático: Ao entrar no Rocketbot Studio na margem direita você encontrará a seção **Addons**, selecione **Install Mods**, procure o módulo desejado e aperte instalar.  
+
+
 
 ## Como usar este módulo
 
@@ -24,18 +25,18 @@ Para usar este módulo você deve:
    4. Carregue e processe um arquivo.
    5. Verifique os dados extraídos.
 3. Salve o token gerado para o modelo
-4. Crie um arquivo chamado telescópio.ini contendo:
+4. Crie um arquivo chamado telescope.ini contendo:
    [USER]
    user = aaaa@rocketbot.cl
    password = robot1111
-   server = http://11.11.1.111/api
+   server = http://11.11.1.111/
 
 
 ## Descrição do comando
 
 ### Login Telescope
   
-Comando para conectar ao telescópio
+Comando para conectar ao Telescope
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Caminho para o arquivo .ini|Selecione o arquivo .ini para conectar|C:/Users/User/Desktop/arquivo.ini|

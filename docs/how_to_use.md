@@ -14,7 +14,7 @@ To use this module you must:
    [USER]
    user = aaaa@rocketbot.cl
    password = robot1111
-   server = http://11.11.1.111/api
+   server = http://11.11.1.111/
 
 ---
 
@@ -34,7 +34,7 @@ Para usar este modulo usted debe:
    [USER]
    user = aaaa@rocketbot.cl
    password = robot1111
-   server = http://11.11.1.111/api
+   server = http://11.11.1.111/
 
 ---
 
@@ -50,10 +50,10 @@ Para usar este módulo você deve:
    4. Carregue e processe um arquivo.
    5. Verifique os dados extraídos.
 3. Salve o token gerado para o modelo
-4. Crie um arquivo chamado telescópio.ini contendo:
+4. Crie um arquivo chamado telescope.ini contendo:
    [USER]
    user = aaaa@rocketbot.cl
    password = robot1111
-   server = http://11.11.1.111/api
+   server = http://11.11.1.111/
 
 ---
