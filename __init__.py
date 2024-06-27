@@ -6,17 +6,25 @@ import requests
 global token
 global server_
 
-
 module = GetParams('module')
 
 if module == 'Login':
     ruta_ = GetParams("ruta_")
+    user_name = GetParams("user_name_")
+    password = GetParams("password_")
+    server_url = GetParams("server_url_")
 
-    config = configparser.ConfigParser()
-    config.read(ruta_)
-    email_ = config.get('USER', 'user')
-    pass_ = config.get('USER', 'password')
-    server_ = config.get('USER', 'server')
+    if ruta_:
+        config = configparser.ConfigParser()
+        config.read(ruta_)
+        email_ = config.get('USER', 'user')
+        pass_ = config.get('USER', 'password')
+        server_ = config.get('USER', 'server')
+    
+    else:
+        email_ = user_name
+        pass_ = password
+        server_ = server_url
     
     if not server_.endswith('/'):
         server_ += '/'

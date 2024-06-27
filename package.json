@@ -46,6 +46,16 @@
           "css": "modal-lg",
           "inputs": [
             {
+              "type": "label",
+              "title": {
+                "es": "Se debe ingresar el archivo .ini o los datos de conexión para conectarse",
+                "en": "You must enter either the ini file or the connection data to connect",
+                "pr": "Adicionar a URL do servidor para se conectar"
+              },
+              "id": "label",
+              "css": "col-md-12"
+            },
+            {
               "type": "file_select",
               "placeholder": {
                 "es": "C:/Users/User/Desktop/archivo.ini",
@@ -64,7 +74,68 @@
               },
               "id": "ruta_",
               "css": "col-md-12"
+            },
+            {
+              "type": "input",
+              "placeholder": {
+                "es": "my_user@rocketbot.com",
+                "en": "my_user@rocketbot.com",
+                "pr": "my_user@rocketbot.com"
+              },
+              "title": {
+                "es": "Usuario:",
+                "en": "User:",
+                "pr": "Usuário:"
+              },
+              "description": {
+                "es": "Agrega un usuario para conectar",
+                "en": "Insert a user to connect",
+                "pr": "Adicionar um usuário para conceder"
+              },
+              "id": "user_name_",
+              "css": "col-md-6"
+            },
+            {
+              "type": "input",
+              "placeholder": {
+                "es": "*******",
+                "en": "*******",
+                "pr": "*******"
+              },
+              "title": {
+                "es": "Contraseña:",
+                "en": "Password:",
+                "pr": "Usuário:"
+              },
+              "description": {
+                "es": "Agrega una contraseña para conectar",
+                "en": "Insert a password to connect",
+                "pr": "Adicionar uma senha para se conectar"
+              },
+              "id": "password_",
+              "css": "col-md-6"
+            },
+            {
+              "type": "input",
+              "placeholder": {
+                "es": " https://hubble.myrb.io",
+                "en": " https://hubble.myrb.io",
+                "pr": " https://hubble.myrb.io"
+              },
+              "title": {
+                "es": "URL del servidor:",
+                "en": "Server URL:",
+                "pr": "URL do servidor:"
+              },
+              "description": {
+                "es": "Agrega la url del servidor para conectar",
+                "en": "Insert a url server to connect",
+                "pr": "Adicionar a URL do servidor para se conectar"
+              },
+              "id": "server_url_",
+              "css": "col-md-12"
             }
+            
           ]
         },
         "video_youtube": "",
