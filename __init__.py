@@ -13,7 +13,9 @@ if module == 'Login':
     user_name = GetParams("user_name_")
     password = GetParams("password_")
     server_url = GetParams("server_url_")
-
+    result = GetParams("result")
+    SetVar(result, False)
+    
     if ruta_:
         config = configparser.ConfigParser()
         config.read(ruta_)
@@ -41,6 +43,8 @@ if module == 'Login':
             res = res.json()
             if res['success']:
                 token = res['data']
+                
+                SetVar(result, True)
             else:
                 raise Exception(res['message'])
         else:
