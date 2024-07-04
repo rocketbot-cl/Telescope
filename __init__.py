@@ -34,6 +34,7 @@ if module == 'Login':
     if server_.endswith('api/'):
         server_ = server_.replace('api/', '')
     
+    
     try:
         data = {'email': email_, 'password': pass_}
         res = requests.post(server_ + '/api/auth/login', data,
