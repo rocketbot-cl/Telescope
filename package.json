@@ -7,7 +7,7 @@
 		"pr": "Módulo para Rocketbot Telescope"
 	},
 	"disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"license": "MIT",
 	"homepage": "https://rocketbot.com",
 	"linux": true,
@@ -117,6 +117,11 @@
 					},
 					{
 						"type": "file_select",
+						"help": {
+							"es": "Opcional",
+							"en": "Optional",
+							"pr": "Opcional"
+						},
 						"placeholder": {
 							"es": "C:/Users/User/Desktop/archivo.ini",
 							"en": "C:/Users/User/Desktop/file.ini",
@@ -134,16 +139,6 @@
 						},
 						"id": "ruta_",
 						"css": "col-md-12"
-					},
-					{
-						"type": "label",
-						"title": {
-							"es": "Opcional",
-							"en": "Optional",
-							"pr": "Opcional"
-						},
-						"id": "label",
-						"css": "col-md-6"
 					},
 					{
 						"type": "input",
